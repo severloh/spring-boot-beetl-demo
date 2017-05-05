@@ -16,7 +16,7 @@ public class HomeController {
     @GetMapping
     public String home(Model model){
         model.addAttribute("hello","hello world");
-        return "index";
+        return "login";
     }
 //    @GetMapping("rest")
 //    public ResponseEntity<String> rest(){

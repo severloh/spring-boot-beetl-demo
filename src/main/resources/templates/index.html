@@ -1,36 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>测试页面</title>
-    <%
-        include("utils/global.html"){}
-    %>
-
-    <script type="text/javascript">
-        $(function(){
-
-        });
-    </script>
-    <script>
-        $(function(){
-            $("#file").change(function(e){
-                var file = e.target.files||e.dataTransfer.files;
-                if(file){
-                    var reader = new FileReader();
-                    reader.onload=function(){
-                        $("<img src='"+this.result+"'/>").appendTo("body");
-                    }
-                    reader.readAsDataURL(file);
-                }
-            });
-        })
-    </script>
+    <meta charset="UTF-8">
+    <title>首页</title>
 </head>
 <body>
-<input type='file' id='file'/>
+已登录
 </body>
 </html>
